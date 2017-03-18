@@ -1,6 +1,6 @@
 {
   "name": "多瑙影院去广告 Dnvod Ad Remover",
-  "version": "1.1.5",
+  "version": "1.2.0",
   "author": "Cameron",
   "short_name": "多瑙影院去广告 Dnvod Ad Remover",
   "description": "去除多瑙影院视频广告",
@@ -13,12 +13,12 @@
   },
   "content_scripts": [
     {
-      "all_frames": true,
       "matches": ["http://www.dnvod.eu/*","https://www.dnvod.eu/*","http://www.dnvod.eu/","https://www.dnvod.eu/"],
       "js": ["removead.js"],
       "run_at": "document_start"
     }
   ],
+  "web_accessible_resources": ["start.js"],
   "permissions": [
     "http://*/","https://*/"
   ],
